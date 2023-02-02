@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A02AB94298B6CDC0013341A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A02AB93298B6CDC0013341A /* GoogleService-Info.plist */; };
 		4C138D941FD0FEE200CC3114 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C138D931FD0FEE200CC3114 /* ListViewController.swift */; };
 		4C138D971FD1062500CC3114 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C138D951FD1062500CC3114 /* ListTableViewCell.swift */; };
 		4C138D981FD1062500CC3114 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C138D961FD1062500CC3114 /* ListTableViewCell.xib */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A02AB93298B6CDC0013341A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		47F3BC4701245F536E3E013D /* Pods_ArchitectureSampleWithFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArchitectureSampleWithFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C138D931FD0FEE200CC3114 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		4C138D951FD1062500CC3114 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
@@ -36,7 +38,6 @@
 		4C45836E1FC96426002AFB69 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4C4583701FC96432002AFB69 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4C4F5E5B1FD3F1DB00AC40F3 /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
-		4CCD9F641FE979170093F63C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9C656F36F39B7C52E8DB0138 /* Pods-ArchitectureSampleWithFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectureSampleWithFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitectureSampleWithFirebase/Pods-ArchitectureSampleWithFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		F6942778E1CB5D48087C10AD /* Pods-ArchitectureSampleWithFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectureSampleWithFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitectureSampleWithFirebase/Pods-ArchitectureSampleWithFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,7 +92,7 @@
 		4C45835A1FC957FB002AFB69 /* ArchitectureSampleWithFirebase */ = {
 			isa = PBXGroup;
 			children = (
-				4CCD9F641FE979170093F63C /* GoogleService-Info.plist */,
+				0A02AB93298B6CDC0013341A /* GoogleService-Info.plist */,
 				4C4F5E5B1FD3F1DB00AC40F3 /* R.generated.swift */,
 				4C4583671FC957FB002AFB69 /* Info.plist */,
 				4C45835F1FC957FB002AFB69 /* Main.storyboard */,
@@ -121,7 +122,6 @@
 				4C4583551FC957FB002AFB69 /* Frameworks */,
 				4C4583561FC957FB002AFB69 /* Resources */,
 				B3B0CFA08F8844EB6B025632 /* [CP] Embed Pods Frameworks */,
-				6738E3B412829E007F8278FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,6 +173,7 @@
 			files = (
 				4C4583661FC957FB002AFB69 /* LaunchScreen.storyboard in Resources */,
 				4C138D981FD1062500CC3114 /* ListTableViewCell.xib in Resources */,
+				0A02AB94298B6CDC0013341A /* GoogleService-Info.plist in Resources */,
 				4C4583631FC957FB002AFB69 /* Assets.xcassets in Resources */,
 				4C4583611FC957FB002AFB69 /* Main.storyboard in Resources */,
 			);
@@ -194,28 +195,13 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
 		};
-		6738E3B412829E007F8278FF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArchitectureSampleWithFirebase/Pods-ArchitectureSampleWithFirebase-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B3B0CFA08F8844EB6B025632 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ArchitectureSampleWithFirebase/Pods-ArchitectureSampleWithFirebase-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ArchitectureSampleWithFirebase/Pods-ArchitectureSampleWithFirebase-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -244,7 +230,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArchitectureSampleWithFirebase/Pods-ArchitectureSampleWithFirebase-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArchitectureSampleWithFirebase/Pods-ArchitectureSampleWithFirebase-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FC8F5418E16D8F47E463E37F /* [CP] Check Pods Manifest.lock */ = {
@@ -338,6 +324,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -395,6 +382,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
